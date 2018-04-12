@@ -1,8 +1,8 @@
 {
-  "name": "insight-ui-dash",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the Dash network and build your own services with it.",
+  "name": "insight-ui-colx",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the Colx network and build your own services with it.",
   "version": "0.4.3",
-  "repository": "git://github.com/dashpay/insight-ui-dash.git",
+  "repository": "git://github.com/deltaengine/insight-ui-colx.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -26,21 +26,20 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/dashpay/insight-ui-dash/issues"
+    "url": "https://github.com/deltaengine/insight-ui-colx/issues"
   },
-  "homepage": "https://github.com/dashpay/insight-ui-dash",
+  "homepage": "https://github.com/deltaengine/insight-ui-colx",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
-    "dash",
-    "bitcore-dash",
+    "colx",
+    "bitcore-colx",
     "front-end"
   ],
-  "bitcoreNode": "bitcore-node-dash",
-  "dependencies": {
-  },
+  "bitcoreNode": "bitcore-node-colx",
+  "dependencies": {},
   "devDependencies": {
     "bower": "~1.2.8",
     "grunt": "~0.4.2",
