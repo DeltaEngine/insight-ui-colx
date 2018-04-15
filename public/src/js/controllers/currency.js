@@ -23,9 +23,6 @@ angular.module('insight.currency').controller('CurrencyController',
         } else if (this.symbol === 'kCOLX') {
           this.factor = 1/1000;
           response = _roundFloat((value * this.factor), 3);
-        } else if (this.symbol === 'mCOLX') {
-          this.factor = 1/1000000;
-          response = _roundFloat((value * this.factor), 6);
         } else {
           this.factor = 1;
           response = value;
@@ -49,8 +46,6 @@ angular.module('insight.currency').controller('CurrencyController',
         });
       } else if (currency === 'kCOLX') {
         $rootScope.currency.factor = 1/1000;
-      } else if (currency === 'mCOLX') {
-        $rootScope.currency.factor = 1/1000000;
       } else {
         $rootScope.currency.factor = 1;
       }
