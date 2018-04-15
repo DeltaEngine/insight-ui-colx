@@ -21,7 +21,7 @@ bitcore-node-colx install insight-ui-colx
 bitcore-node-colx start
 ```
 
-Open a web browser to `http://localhost:3001/insight/`
+Open a web browser to `http://localhost`
 
 ## Development
 

@@ -20,12 +20,12 @@ angular.module('insight.currency').controller('CurrencyController',
 
         if (this.symbol === 'USD') {
           response = _roundFloat((value * this.factor), 2);
-        } else if (this.symbol === 'mDASH') {
-          this.factor = 1000;
-          response = _roundFloat((value * this.factor), 5);
-        } else if (this.symbol === 'uDASH') {
-          this.factor = 1000000;
-          response = _roundFloat((value * this.factor), 2);
+        } else if (this.symbol === 'kCOLX') {
+          this.factor = 1/1000;
+          response = _roundFloat((value * this.factor), 3);
+        } else if (this.symbol === 'mCOLX') {
+          this.factor = 1/1000000;
+          response = _roundFloat((value * this.factor), 6);
         } else {
           this.factor = 1;
           response = value;
@@ -47,10 +47,10 @@ angular.module('insight.currency').controller('CurrencyController',
         Currency.get({}, function(res) {
           $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp;
         });
-      } else if (currency === 'mDASH') {
-        $rootScope.currency.factor = 1000;
-      } else if (currency === 'uDASH') {
-        $rootScope.currency.factor = 1000000;
+      } else if (currency === 'kCOLX') {
+        $rootScope.currency.factor = 1/1000;
+      } else if (currency === 'mCOLX') {
+        $rootScope.currency.factor = 1/1000000;
       } else {
         $rootScope.currency.factor = 1;
       }
